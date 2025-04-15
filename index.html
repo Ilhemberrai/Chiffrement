@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Outil de Chiffrement</title>
+</head>
+<body>
+  <h1>Outil de Chiffrement</h1>
+
+  <label>Texte:</label><br>
+  <textarea id="text" rows="4" cols="50"></textarea><br><br>
+
+  <label>Clé (si nécessaire):</label><br>
+  <input type="text" id="key"><br><br>
+
+  <label>Méthode:</label><br>
+  <select id="method">
+    <option value="cesar">César</option>
+    <option value="substitution">Substitution simple</option>
+    <option value="atbash">Atbash</option>
+    <option value="rot13">ROT13</option>
+    <option value="albam">Albam</option>
+    <option value="polybe">Carré de Polybe</option>
+    <option value="trithemius">Trithemius</option>
+    <option value="vigenere">Vigenère</option>
+    <option value="autokey">Autokey</option>
+    <option value="porta">Porta</option>
+    <option value="beaufort">Beaufort</option>
+    <option value="vernam">Vernam</option>
+  </select><br><br>
+
+  <label>Action:</label><br>
+  <select id="action">
+    <option value="encrypt">Chiffrement</option>
+    <option value="decrypt">Déchiffrement</option>
+  </select><br><br>
+
+  <button onclick="run()">Exécuter</button><br><br>
+
+  <h3>Résultat:</h3>
+  <div id="result"></div>
+
+  <script src="chiffre.js"></script>
+</body>
+</html>
